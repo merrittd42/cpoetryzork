@@ -192,12 +192,11 @@ while run_game
 
   if game_node.game_over?
     run_game = false
-    puts game_node.description
     prompt.select(game_node.description, ['EAST', 'WEST'])
-    prompt.select(game_node.game_over_text)
-    
+    prompt.keypress(game_node.game_over_text)
 
     puts "\nThank you so much for to playing my game - Mario (1996)"
+    puts "\n SCORE: #{rand(10000000000000)}"
   else
 
     choice = prompt.select(game_node.description, [prompt_left.choice_text, prompt_right.choice_text])
