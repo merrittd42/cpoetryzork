@@ -195,6 +195,7 @@ while run_game
     puts game_node.description
     prompt.select(game_node.description, ['EAST', 'WEST'])
     prompt.select(game_node.game_over_text)
+    
 
     puts "\nThank you so much for to playing my game - Mario (1996)"
   else
